@@ -11,7 +11,7 @@ local replicatedStorage = game:GetService("ReplicatedStorage")
 local heartbeatConnection
 local upgrades = localPlayer.Upgrades
 local UseRage = false
-local sliderValue = 20
+local sliderValue = 30
 
 local function onCharacterAdded(newCharacter)
     character = newCharacter
