@@ -11,7 +11,7 @@ local replicatedStorage = game:GetService("ReplicatedStorage")
 local heartbeatConnection
 local upgrades = localPlayer.Upgrades
 local UseRage = false
-local sliderValue = 30
+local sliderValue = 20
 
 local function onCharacterAdded(newCharacter)
     character = newCharacter
@@ -340,7 +340,7 @@ local DistanceSlider = AutoParry:CreateSlider({
    Range = {0, 300},
    Increment = 1,
    Suffix = "Distance",
-   CurrentValue = 20,
+   CurrentValue = 30,
    Flag = "DistanceSlider",
    Callback = function(Value)
        sliderValue = Value
