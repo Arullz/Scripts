@@ -11,7 +11,7 @@ local replicatedStorage = game:GetService("ReplicatedStorage")
 local heartbeatConnection
 local upgrades = localPlayer.Upgrades
 local UseRage = false
-local sliderValue = 20
+local sliderValue = 30
 
 local function onCharacterAdded(newCharacter)
     character = newCharacter
@@ -36,7 +36,7 @@ end
 local Window = Rayfield:CreateWindow({
    Name = "Blade Ball",
    LoadingTitle = "Blade Ball",
-   LoadingSubtitle = "by SadlekAski",
+   LoadingSubtitle = "by Arull",
    ConfigurationSaving = {
       Enabled = false,
       FolderName = "BladeBallerlol",
@@ -325,7 +325,7 @@ local parryButtonPress = replicatedStorage.Remotes.ParryButtonPress
 
  local SpamParry = AutoParry:CreateKeybind({
     Name = "Spam Parry (Hold)",
-    CurrentKeybind = "C",
+    CurrentKeybind = "F",
     HoldToInteract = true,
     Flag = "ToggleParrySpam", 
     Callback = function(Keybind)
@@ -350,7 +350,7 @@ local DistanceSlider = AutoParry:CreateSlider({
 
 local ToggleParryOn = AutoParry:CreateKeybind({
    Name = "Parry On/Off",
-   CurrentKeybind = "One",
+   CurrentKeybind = "P",
    HoldToInteract = false,
    Flag = "ToggleParryOn", 
    Callback = function(Keybind)
@@ -362,7 +362,7 @@ AutoParryToggle:Set(not AutoParryToggle.CurrentValue)
 
 local ChangeDistanceTothirty = AutoParry:CreateKeybind({
    Name = "+10, Credits to (for add,remove cuz im dumb) askien",
-   CurrentKeybind = "V",
+   CurrentKeybind = "X",
    HoldToInteract = false,
    Flag = "Distanceto30", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
    Callback = function(Keybind)
@@ -378,7 +378,7 @@ if sliderValue > 0 then
 
 local ChangeDistanceToidk = AutoParry:CreateKeybind({
    Name = "-10",
-   CurrentKeybind = "B",
+   CurrentKeybind = "Z",
    HoldToInteract = false,
    Flag = "Distanceto100", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
    Callback = function(Keybind)
@@ -392,7 +392,7 @@ local ChangeDistanceToidk = AutoParry:CreateKeybind({
 local Configuration2 = AutoParry:CreateSection("Configuration2")
 local ChangeDistanceToidk = AutoParry:CreateKeybind({
    Name = "Distance 30",
-   CurrentKeybind = "Z",
+   CurrentKeybind = "V",
    HoldToInteract = false,
    Flag = "Distanceto100", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
    Callback = function(Keybind)
@@ -402,7 +402,7 @@ DistanceSlider:Set(30) -- The new slider integer value
 
 local ChangeDistanceToidk = AutoParry:CreateKeybind({
    Name = "Distance 100",
-   CurrentKeybind = "X",
+   CurrentKeybind = "B",
    HoldToInteract = false,
    Flag = "Distanceto100", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
    Callback = function(Keybind)
