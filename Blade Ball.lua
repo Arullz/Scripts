@@ -16,7 +16,7 @@ local parryButtonPress = replicatedStorage.Remotes.ParryButtonPress
     CoreGui:SetCore("SendNotification", {
         Title = "Executed";
         Text = ;
-        Duration = 2;
+        Duration = 5;
         Icon = "";
     })
 end
